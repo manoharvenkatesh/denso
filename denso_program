@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+   int i,p,sum=0;
+   scanf("%d%d",&i,&p);
+   p=100-p;
+   while(i>0)
+   {
+       sum=sum+i;
+       i=(p*i)/100;
+   }
+   printf("%d",sum);
+   return 0;
+}
+
